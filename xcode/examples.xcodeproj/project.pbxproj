@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		562B31AE29582C2A0053E9D4 /* libMoltenVK.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 562B31AD29582C2A0053E9D4 /* libMoltenVK.dylib */; };
+		562B31B029582C9F0053E9D4 /* libMoltenVK.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 562B31AD29582C2A0053E9D4 /* libMoltenVK.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		A951FF171E9C349000FA9144 /* VulkanDebug.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A951FF071E9C349000FA9144 /* VulkanDebug.cpp */; };
 		A951FF181E9C349000FA9144 /* VulkanDebug.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A951FF071E9C349000FA9144 /* VulkanDebug.cpp */; };
 		A951FF191E9C349000FA9144 /* vulkanexamplebase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A951FF0A1E9C349000FA9144 /* vulkanexamplebase.cpp */; };
@@ -15,9 +17,7 @@
 		A951FF1C1E9C349000FA9144 /* VulkanTools.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A951FF131E9C349000FA9144 /* VulkanTools.cpp */; };
 		A9532B761EF99894000A09E2 /* libMoltenVK.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = A9532B751EF99894000A09E2 /* libMoltenVK.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		A9532B771EF9991A000A09E2 /* libMoltenVK.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A9532B751EF99894000A09E2 /* libMoltenVK.dylib */; };
-		A9532B781EF99937000A09E2 /* libMoltenVK.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A9581BAB1EEB64EC00247309 /* libMoltenVK.dylib */; };
 		A9581BA81EEB648C00247309 /* (null) in Frameworks */ = {isa = PBXBuildFile; };
-		A9581BAC1EEB64EC00247309 /* libMoltenVK.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = A9581BAB1EEB64EC00247309 /* libMoltenVK.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		A98703D91E9D382A0066959C /* data in Resources */ = {isa = PBXBuildFile; fileRef = A98703D81E9D382A0066959C /* data */; };
 		A98703DA1E9D382A0066959C /* data in Resources */ = {isa = PBXBuildFile; fileRef = A98703D81E9D382A0066959C /* data */; };
 		A9B67B781C3AAE9800373FFD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B67B6C1C3AAE9800373FFD /* AppDelegate.m */; };
@@ -93,7 +93,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 6;
 			files = (
-				A9581BAC1EEB64EC00247309 /* libMoltenVK.dylib in CopyFiles */,
+				562B31B029582C9F0053E9D4 /* libMoltenVK.dylib in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,6 +114,7 @@
 		1D3623EB0D0F72F000981E51 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		1D6058910D05DD3D006BFB54 /* examples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = examples.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D500B990D5A79CF00DBA0E3 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		562B31AD29582C2A0053E9D4 /* libMoltenVK.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libMoltenVK.dylib; path = ../../MoltenVK/Package/Debug/MoltenVK/dylib/macOS/libMoltenVK.dylib; sourceTree = "<group>"; };
 		A92F37071C7E1B2B008F8BC9 /* examples.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = examples.h; sourceTree = "<group>"; };
 		A951FF001E9C349000FA9144 /* camera.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = camera.hpp; sourceTree = "<group>"; };
 		A951FF011E9C349000FA9144 /* frustum.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = frustum.hpp; sourceTree = "<group>"; };
@@ -224,7 +225,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A9532B781EF99937000A09E2 /* libMoltenVK.dylib in Frameworks */,
+				562B31AE29582C2A0053E9D4 /* libMoltenVK.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +263,7 @@
 			children = (
 				A9581BAB1EEB64EC00247309 /* libMoltenVK.dylib */,
 				A9532B751EF99894000A09E2 /* libMoltenVK.dylib */,
+				562B31AD29582C2A0053E9D4 /* libMoltenVK.dylib */,
 				A9B6B7641C0F795D00A9E33A /* CoreAudio.framework */,
 				A9ADEC601B6EC2EB00DBA48C /* iOS */,
 				A9ADEC611B6EC2F300DBA48C /* macOS */,
@@ -468,9 +470,9 @@
 			buildConfigurationList = A977BCFB1B66BB010067E5BF /* Build configuration list for PBXNativeTarget "examples-macos" */;
 			buildPhases = (
 				A977BCBE1B66BB010067E5BF /* Resources */,
-				A977BCC91B66BB010067E5BF /* Sources */,
 				A977BCF11B66BB010067E5BF /* Frameworks */,
 				A91227BB1E9D5E9D00108018 /* CopyFiles */,
+				A977BCC91B66BB010067E5BF /* Sources */,
 			);
 			buildRules = (
 			);
@@ -683,9 +685,14 @@
 					_DEBUG,
 					VK_USE_PLATFORM_MACOS_MVK,
 				);
+				HEADER_SEARCH_PATHS = (
+					/Users/yuhan/GitHub/MoltenVK/Package/Debug/MoltenVK/include,
+					"\"$(SRCROOT)/../external\"/**",
+					"\"$(SRCROOT)/../base\"",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/macOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path";
-				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/MoltenVK/dylib/macOS\"";
+				LIBRARY_SEARCH_PATHS = /Users/yuhan/GitHub/MoltenVK/Package/Debug/MoltenVK/dylib/macOS;
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				SDKROOT = macosx;
 			};
@@ -702,9 +709,14 @@
 					"$(inherited)",
 					VK_USE_PLATFORM_MACOS_MVK,
 				);
+				HEADER_SEARCH_PATHS = (
+					/Users/yuhan/GitHub/MoltenVK/Package/Debug/MoltenVK/include,
+					"\"$(SRCROOT)/../external\"/**",
+					"\"$(SRCROOT)/../base\"",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/macOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path";
-				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/MoltenVK/dylib/macOS\"";
+				LIBRARY_SEARCH_PATHS = /Users/yuhan/GitHub/MoltenVK/Package/Debug/MoltenVK/dylib/macOS;
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = macosx;
